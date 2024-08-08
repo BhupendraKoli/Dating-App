@@ -152,6 +152,11 @@ body {
     margin-right: 30%;
     font-size: small;
   }
+
+  .nameofp a{
+    text-decoration: none;
+    color: #ffffff;
+  }
   
   .photo-item button {
     position: absolute;
