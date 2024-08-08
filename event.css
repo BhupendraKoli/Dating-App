@@ -8,9 +8,15 @@ body {
   
   .sidebar {
     width: 321.75px;
-    background-color: #f4f4f4;
-    padding: 20px;
+    background-color: rgb(162, 161, 162);
+    padding: 10px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+     background:  #C4DFE6;
+    background: linear-gradient(
+      to right,
+      #C4DFE6, #66A5AD
+    );  
+    /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
   }
   
   .profile {
@@ -98,6 +104,7 @@ body {
   
   .event-info {
     flex-grow: 1;
+    margin-left: 15px;
   }
   
   .event-options {
@@ -122,6 +129,7 @@ body {
   .photo-item {
     position: relative;
     text-align: center;
+    margin-bottom: 15px;
   }
   
   .photo-item img {
