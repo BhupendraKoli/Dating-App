@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+<link rel="stylesheet" href="eventpayment.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+</style>
+
+<body>
+    <!-- lets Start the new thing -->
+    <div class="sidebar">
+        <h1 class="main-logo">Hello Moto</h1>
+        <br />
+        <br />
+        <div class="profile">
+            <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Profile Picture" />
+            <h2>Sammy Hemmy</h2>
+            <p>Business Man</p>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/1828/1828765.png"
+                            alt="icon 1" />Dashboard</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/2558/2558906.png"
+                            alt="icon 2" />Events</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/1570/1570888.png"
+                            alt="icon 3" />Find Trips</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img
+                            src="https://cdn-icons-png.flaticon.com/128/11120/11120815.png" alt="icon 1" />Messages</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img
+                            src="https://cdn-icons-png.flaticon.com/128/14310/14310546.png" alt="icon 1" />Find
+                        Partner</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/2420/2420256.png"
+                            alt="icon 1" />Virtual Dating</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/4006/4006817.png"
+                            alt="icon 1" />Speed Dating</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/1206/1206857.png"
+                            alt="icon 1" />Blind Dating</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/2410/2410394.png"
+                            alt="icon 1" />Dances</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/1907/1907524.png"
+                            alt="icon 1" />Read Blogs & News</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img
+                            src="https://cdn-icons-png.flaticon.com/128/10465/10465661.png" alt="icon 1" />Get
+                        Consult</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img
+                            src="https://cdn-icons-png.flaticon.com/128/17338/17338302.png"
+                            alt="icon 1" />Communities</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/2099/2099058.png"
+                            alt="icon 1" />Settings</a>
+                </li>
+                <li>
+                    <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/992/992680.png"
+                            alt="icon 1" />Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header class="header">
+            <input type="search" placeholder="Search" /><img src="https://cdn-icons-png.flaticon.com/128/751/751463.png"
+                alt="search icon" />
+            <button>Go Live</button>
+        </header>
+        <br />
+        <div class="dash">
+           <h2> Event >  <a href="awesomeevent 2.html">Awesome Event </a>> Payment</h2>
+        </div>
+
+
+        <div class="payment-section">
+            <h2>Select Payment Method <span>$1500</span></h2>
+            <ul class="payment-methods">
+                <li><img src="https://cdn-icons-png.flaticon.com/128/8983/8983163.png" alt=""><label
+                        for="credit-card">Add Credit or Debit Card</label><input type="radio" name="payment-method"
+                        id="credit-card"></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/825/825454.png" alt=""><label for="paytm">Pay Via
+                        Paytm</label><input type="radio" name="payment-method" id="paytm"></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/1728/1728987.png" alt=""><label
+                        for="netbanking">Pay Via Netbanking</label><input type="radio" name="payment-method"
+                        id="netbanking"></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/196/196578.png" alt=""><label for="upi">Pay Via
+                        UPI</label><input type="radio" name="payment-method" id="upi"></li>
+                <li><img src="https://th.bing.com/th/id/OIP.1OW9IFC74M3w1szdpEZ_kgHaD8?w=318&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt=""><label for="phonepay">Pay Via Phone Pay</label><input type="radio" name="payment-method"
+                        id="phonepay"></li>
+            </ul>
+            <button id="payBtn">Proceed to Pay</button>
+        </div>
+
+        <div id="paymentModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h3>Payment Successful</h3>
+                <p>
+                    Thank you for your payment! We are pleased to confirm that your transaction has been processed successfully.</p>
+                <button class="back-button" id="backBtn">Back</button>
+            </div>
+        </div>
+
+        <!-- Booking Details Section -->
+        <div class="booking-details">
+            <h2>Booking Details</h2>
+            <div class="infoT">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/4/412692579/QR/GI/GK/197281557/restaurant-dining-table-500x500.webp"
+                    alt="Event">
+                <div class="tf">
+                    <p>Awesome Event</p>
+                    <p>Date & Time: 23 January 2024, 2:00 PM</p>
+                    <p>Total Amount: <span>$1500</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+<script src="eventpayment.js"></script>
+
+</body>
+</html>
