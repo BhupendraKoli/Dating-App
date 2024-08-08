@@ -15,3 +15,7 @@ window.addEventListener("click", function (event) {
     document.getElementById("paymentModal").style.display = "none";
   }
 });
+
+
+
+

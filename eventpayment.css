@@ -1,333 +1,374 @@
 body {
-    display: flex;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgba(65, 142, 142, 0.133);
+  display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background-color: rgba(65, 142, 142, 0.133); */
+  background: #a6c0fe;
+  background: linear-gradient(to right, #a6c0fe, #f68084);
 }
 
 .sidebar {
-    width: 321.75px;
-    background-color: #f4f4f4;
-    padding: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  width: 22.3%;
+  background-color: rgb(162, 161, 162);
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  background: #c4dfe6;
+  background: linear-gradient(to right, #c4dfe6, #66a5ad);
+  /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
 }
 
 .main-logo {
-    text-align: center;
+  text-align: center;
 }
 
 .dash h2 {
-    margin-left: 30px;
+  margin-left: 15px;
 }
 
 .profile {
-    text-align: center;
+  text-align: center;
 }
 
 .profile img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 .profile h2,
 .profile p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 100px 0;
-    font-size: medium;
-    position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 100px 0;
+  font-size: medium;
+  position: relative;
 }
 
 nav ul li {
-    margin: 50px 0;
-    text-align: center;
-    text-decoration: solid;
-    margin-bottom: 10px;
-    font-size: large;
-    position: relative;
-    color: linear-gradient(to right, #ae2896, #509bf5);
+  margin: 50px 0;
+  text-align: center;
+  text-decoration: solid;
+  margin-bottom: 10px;
+  font-size: large;
+  position: relative;
+  color: linear-gradient(to right, #ae2896, #509bf5);
 }
 
 .nav-list {
-    li {
-        list-style-type: none;
-        padding: 0;
-        margin-left: 25px;
-        text-align: left;
-        color: linear-gradient(to right, #ae2896, #509bf5);
-    }
+  li {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 25px;
+    text-align: left;
+    color: linear-gradient(to right, #ae2896, #509bf5);
+  }
 }
-
 /* new one  */
 
 .hover-effect {
-    position: relative;
-    display: inline-block;
-    color: black;
-    text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
 }
 
 .hover-effect::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right, #ae2896, #509bf5);
-    transition: all 0.3s ease;
-    transform: scaleX(0);
-    transform-origin: bottom right;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  transition: all 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: bottom right;
 }
 
 .hover-effect:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .hover-effect:hover {
-    color: transparent;
-    background: linear-gradient(to right, #ae2896, #509bf5);
-    -webkit-background-clip: text;
-    background-clip: text;
+  color: transparent;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /* old one */
 .nav-list img {
-    width: 18px;
-    /* Adjust the width as needed */
-    height: 18px;
-    /* Adjust the height as needed */
-    margin-right: 10px;
-    /* Space between the logo and the text */
+  width: 18px; /* Adjust the width as needed */
+  height: 18px; /* Adjust the height as needed */
+  margin-right: 10px; /* Space between the logo and the text */
 }
 
 /* nav ul li a {
-position: relative;
-display: inline-block;
-color: black;
-text-decoration: none;
-}  */
+      position: relative;
+      display: inline-block;
+      color: black;
+      text-decoration: none;
+    }  */
 /* hover  */
 
 .main-content {
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header {
-    background-color: #ffffff;
-    padding: 5px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 5px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
-
 header input {
-    width: 300px;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-left: 15px;
+  width: 300px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-left: 15px;
 }
 
 header img {
-    width: 18px;
-    height: 18px;
-    margin-right: 630px;
-    border: 0.5px solid rgba(128, 128, 128, 0.456);
-    border-radius: 8px;
-    padding: 0.5%;
+  width: 18px;
+  height: 18px;
+  margin-right: 630px;
+  border: 0.5px solid rgba(128, 128, 128, 0.456);
+  border-radius: 8px;
+  padding: 0.5%;
 }
 
 header button {
-    padding: 10px 20px;
-    margin-right: 8px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
 .dash {
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
 
-    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
-    border-radius: 20px 20px;
+  box-shadow: rgba(47, 47, 47, 0.35) 10px 10px 10px;
+  border-radius: 20px 20px;
 }
-.dash h2 a{
-    text-decoration: none;
-    color: black;
+.dash h2 button {
+  padding: 5px 15px;
+  margin-right: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 15px 15px;
+  cursor: pointer;
+  font-size: medium;
 }
-
 .live-streams {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .dashboard {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .live-streams,
 .new-trips,
 .join-events,
 .latest-blogs {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
+.headerinfo a {
+  text-decoration: none;
+  color: black;
+}
 
 .payment-section {
-    /* flex: 1; */
-    margin-top: 77px;
-    overflow: visible;
-    float: right;
-    background: #ffffff;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
-    border: 2px solid white;
-    text-align: center;
-    width: 300px;
-    height: 450px;
+  /* flex: 1; */
+  margin-top: 20px;
+  overflow: visible;
+  float: right;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
+  border: 2px solid white;
+  text-align: center;
+  width: 30%;
+  height: 450px;
 }
 
 .payment-section h2 {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.booking-details .infoT {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 15px;
-    margin-top: 10px;
-    border: 2px solid white;
-    width: 600px;
+.booking-details {
+  align-items: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  margin-top: 20px;
+  border: 2px solid white;
+  width: 600px;
+}
+
+.infoT h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.payment-section span {
+  margin-left: 50px;
 }
 
 .booking-details .infoT img {
-    width: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 20px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.booking-details .infoT {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 .booking-details .tf {
-    display: flex;
-    flex-direction: column;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+}
+
+.tf h3,
+p1 {
+  margin: 0%;
+  padding: 0%;
+}
+
+.payment-section h3 {
+  padding-bottom: 30px;
+}
+
+.payment-section h3 span {
+  margin-right: 0%;
+  color: #e74c3c;
 }
 
 .booking-details .tf p {
-    margin: 5px 0;
+  color: #333333a4;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 0%;
 }
 
-.booking-details .tf p span {
-    font-weight: bold;
-    color: #e74c3c;
+.price {
+  margin-top: 25px;
+}
+
+.price p1 span {
+  font-weight: bold;
+  color: #e74c3c;
 }
 
 .payment-methods {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .payment-methods li {
-    margin: 15px 0;
-    text-align: left;
+  margin: 15px 0;
+  text-align: left;
 }
 
 .payment-methods img {
-    width: 22px;
-    height: 22px;
-   
-
+  width: 18px; /* Adjust the width as needed */
+  height: 18px; /* Adjust the height as needed */
+  margin-right: 10px;
+  margin-bottom: -3px;
 }
 
 .payment-methods input {
-    margin-left: 90%;
-
+  margin-left: 90%;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 30%;
-    border-radius: 10px;
-    text-align: center;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .modal-content h3 {
-    color: green;
-    font-size: 24px;
+  color: green;
+  font-size: 24px;
 }
 
 .modal-content p {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .back-button {
-    padding: 10px 20px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    right: 50%;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
