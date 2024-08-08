@@ -151,9 +151,9 @@
             </div>
             <div class="event-options">
               <p>Sort By</p>
-              <select>
+              <select id="event-selector">
                 <option value="all-events">Latest</option>
-                <option value="upcoming-events">Trending</option>
+                <option value="awesomeevent 2.html">MY Event</option>
                 <option value="past-events">Populer</option>
               </select>
             </div>
@@ -168,7 +168,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -177,7 +177,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -187,7 +187,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
             </div>
@@ -201,7 +201,7 @@
                 <div class="nameofp">
                   <p>
                     Awesome Events
-                    <button>Join</button>
+                    <a href="awesomeevent.html"><button>Join</button></a>
                   </p>
                 </div>
               </div>
@@ -212,7 +212,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -222,7 +222,7 @@
                 />
                 <div class="nameofp">
                   <p> Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
             </div>
@@ -235,7 +235,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -245,7 +245,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -255,7 +255,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
             </div>
@@ -268,7 +268,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -278,7 +278,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -288,12 +288,20 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent.html"><button>Join</button></a>
                 </div>
               </div>
             </div>
         </div>
     </div>
+    <script>
+      document.getElementById('event-selector').addEventListener('change', function() {
+    var selectedValue = this.value;
+    if (selectedValue) {
+        window.location.href = selectedValue;
+    }
+});
+    </script>
 </body>
 
 </html>
