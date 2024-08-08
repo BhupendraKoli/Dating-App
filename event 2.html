@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
     <link rel="stylesheet" href="event 2.css">
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -98,9 +98,9 @@
             </div>
             <div class="event-options">
               <p>Sort By</p>
-              <select>
+              <select id="event-selector">
                 <option value="all-events">Latest</option>
-                <option value="upcoming-events">Trending</option>
+                <option value="events.html">Trending</option>
                 <option value="past-events">Populer</option>
               </select>
             </div>
@@ -116,7 +116,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent 2.html"><button>Join</button></a>
                 </div>
               </div>
               <br>
@@ -132,7 +132,7 @@
                 <div class="nameofp">
                   <p>
                     Awesome Events
-                    <button>Join</button>
+                    <a href="awesomeevent 2.html"><button>Join</button></a>
                   </p>
                 </div>
               </div>
@@ -143,7 +143,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent 2.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -153,7 +153,7 @@
                 />
                 <div class="nameofp">
                   <p> Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent 2.html"><button>Join</button></a>
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent 2.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -177,7 +177,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent 2.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -187,7 +187,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent 2.html"><button>Join</button></a>
                 </div>
               </div>
             </div>
@@ -201,7 +201,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent 2.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -211,7 +211,7 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent 2.html"><button>Join</button></a>
                 </div>
               </div>
               <div class="photo-item">
@@ -221,12 +221,21 @@
                 />
                 <div class="nameofp">
                   <p>Awesome Events</p>
-                  <button>Join</button>
+                  <a href="awesomeevent 2.html"><button>Join</button></a>
                 </div>
               </div>
             </div>
         </div>
     </div>
+
+    <script>
+      document.getElementById('event-selector').addEventListener('change', function() {
+    var selectedValue = this.value;
+    if (selectedValue) {
+        window.location.href = selectedValue;
+    }
+});
+    </script>
 </body>
 
 </html>
