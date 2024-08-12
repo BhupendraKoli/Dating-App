@@ -1,116 +1,115 @@
 body {
-    display: flex;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    /* background-color: rgba(65, 142, 142, 0.133); */
-    background: #a6c0fe;
-    background: linear-gradient(to right, #a6c0fe, #f68084);
+  display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background-color: rgba(65, 142, 142, 0.133); */
+  background: #a6c0fe;
+  background: linear-gradient(to right, #a6c0fe, #f68084);
 }
 
 .sidebar {
-    width: 22.3%;
-    background-color: rgb(162, 161, 162);
-    padding: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    background: #C4DFE6;
-    background: linear-gradient(to right,
-            #C4DFE6, #66A5AD);
-    /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+  width: 22.3%;
+  background-color: rgb(162, 161, 162);
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  background: #c4dfe6;
+  background: linear-gradient(to right, #c4dfe6, #66a5ad);
+  /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
 }
 
 .main-logo {
-    text-align: center;
+  text-align: center;
 }
 
 .dash h2 {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .profile {
-    text-align: center;
+  text-align: center;
 }
 
 .profile img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 .profile h2,
 .profile p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 100px 0;
-    font-size: medium;
-    position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 100px 0;
+  font-size: medium;
+  position: relative;
 }
 
 nav ul li {
-    margin: 50px 0;
-    text-align: center;
-    text-decoration: solid;
-    margin-bottom: 10px;
-    font-size: large;
-    position: relative;
-    color: linear-gradient(to right, #ae2896, #509bf5);
+  margin: 50px 0;
+  text-align: center;
+  text-decoration: solid;
+  margin-bottom: 10px;
+  font-size: large;
+  position: relative;
+  color: linear-gradient(to right, #ae2896, #509bf5);
 }
 
 .nav-list {
-    li {
-        list-style-type: none;
-        padding: 0;
-        margin-left: 25px;
-        text-align: left;
-        color: linear-gradient(to right, #ae2896, #509bf5);
-    }
+  li {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 25px;
+    text-align: left;
+    color: linear-gradient(to right, #ae2896, #509bf5);
+  }
 }
 
 /* new one  */
 
 .hover-effect {
-    position: relative;
-    display: inline-block;
-    color: black;
-    text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
 }
 
 .hover-effect::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right, #ae2896, #509bf5);
-    transition: all 0.3s ease;
-    transform: scaleX(0);
-    transform-origin: bottom right;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  transition: all 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: bottom right;
 }
 
 .hover-effect:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .hover-effect:hover {
-    color: transparent;
-    background: linear-gradient(to right, #ae2896, #509bf5);
-    -webkit-background-clip: text;
-    background-clip: text;
+  color: transparent;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /* old one */
 .nav-list img {
-    width: 18px;
-    /* Adjust the width as needed */
-    height: 18px;
-    /* Adjust the height as needed */
-    margin-right: 10px;
-    /* Space between the logo and the text */
+  width: 18px;
+  /* Adjust the width as needed */
+  height: 18px;
+  /* Adjust the height as needed */
+  margin-right: 10px;
+  /* Space between the logo and the text */
 }
 
 /* nav ul li a {
@@ -122,85 +121,85 @@ nav ul li {
 /* hover  */
 
 .main-content {
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header {
-    background-color: #ffffff;
-    padding: 5px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 5px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 header input {
-    width: 300px;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-left: 15px;
+  width: 300px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-left: 15px;
 }
 
 header img {
-    width: 18px;
-    height: 18px;
-    margin-right: 630px;
-    border: 0.5px solid rgba(128, 128, 128, 0.456);
-    border-radius: 8px;
-    padding: 0.5%;
+  width: 18px;
+  height: 18px;
+  margin-right: 630px;
+  border: 0.5px solid rgba(128, 128, 128, 0.456);
+  border-radius: 8px;
+  padding: 0.5%;
 }
 
 header button {
-    padding: 10px 20px;
-    margin-right: 8px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 8px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .dash {
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
 
-    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
-    border-radius: 20px 20px;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px 20px;
 }
 
 .live-streams {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .dashboard {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .live-streams,
 .new-trips,
 .join-events,
 .latest-blogs {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .bg {
-    position: relative;
-    margin: 10px;
-    background-image: url("https://marketbusinessnews.com/wp-content/uploads/2019/05/popular-blogs-blogging-image-333.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    height: 300px;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    padding-right: 20px;
+  position: relative;
+  margin: 10px;
+  background-image: url("https://marketbusinessnews.com/wp-content/uploads/2019/05/popular-blogs-blogging-image-333.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
 }
 
 /* .overlay {
@@ -220,8 +219,8 @@ header button {
   } */
 
 a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* .overlay h2 {
@@ -244,7 +243,7 @@ a {
 } */
 
 .join-button:hover {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 /* .fav ul {
@@ -282,139 +281,132 @@ a {
   } */
 
 #limit {
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: #ffffff;
-    padding: 15px;
-    height: 100%;
-    width: 97%;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 15px;
+  height: 90%;
+  width: 97%;
 }
 
-.para {
-    
-}
-
-.content-section1 img{
-    width: 40%;
-    height: 250px;
-    border: 2px solid black;
-    margin: 10px;
-    border-radius: 10px;
+.content-section1 img {
+  width: 40%;
+  height: 250px;
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .content-section1 p {
-    width: 50%;
-    float: right;
+  width: 50%;
+  float: right;
 }
 
-.content-section2{
-    margin-left: 35px;
+.content-section2 {
+  margin-left: 35px;
 }
 
-.content-section2 img{
-    width: 40%;
-    height: 250px;
-    border: 2px solid gray;
-    margin: 10px;
-    border-radius: 10px;
+.content-section2 img {
+  width: 40%;
+  height: 250px;
+  border: 2px solid gray;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .content-section2 p {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 30px;
-    margin-left:35px;
-    margin-right: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 35px;
+  margin-right: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
-    font-size: 20px;
-    font-weight:100;
-    margin-left:10px;
-    color: rgb(77, 77, 77);
+  font-size: 18px;
+  font-weight: 100;
+  margin-left: 10px;
+  color: rgb(77, 77, 77);
 }
 
 .dis h3 {
-    font-size: 18px;
-    margin: 10px;
-    justify-content: space-between;
-    font-family: Verdana, Tahoma, sans-serif;
-
+  font-size: 18px;
+  margin: 10px;
+  justify-content: space-between;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 .dis ul.custom-bullets {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 ul.custom-bullets li {
-    position: relative;
-    padding-left: 20px;
+  position: relative;
+  padding-left: 20px;
 }
 
 ul.custom-bullets li::before {
-    content: '•';
-    color: red;
-    /* Change this to your desired bullet color */
-    position: absolute;
-    left: 0;
+  content: "•";
+  color: red;
+  /* Change this to your desired bullet color */
+  position: absolute;
+  left: 0;
 }
 
 .dis ul li {
-    color: rgb(77, 77, 77);
+  color: rgb(77, 77, 77);
 }
 
 .profileR-card {
-    display: flex;
-    align-items: center;
-    border: none;
-    padding: 10px;
-    width: 250px;
-    background-color: #fff;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 10px;
+  width: 250px;
+  background-color: #fff;
 }
 
 .profileR-pic {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
-    object-fit: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
 }
 
 .profileR-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
 }
 
 .profileR-name {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* for logo  */
 
 .bg ul {
-    list-style-type: none; /* Removes default list styling */
-    padding: 0;
-    margin-top: 18%;
-    display: flex; /* Keeps list items in a row */
-    flex-direction: column; /* Stacks list items vertically */
-    align-items: flex-end; /* Aligns the items to the right */
+  list-style-type: none; /* Removes default list styling */
+  padding: 0;
+  margin-top: 18%;
+  display: flex; /* Keeps list items in a row */
+  flex-direction: column; /* Stacks list items vertically */
+  align-items: flex-end; /* Aligns the items to the right */
 }
 
-
 .bg ul li a img {
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
-    padding: 5px;
-
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  padding: 5px;
 }
 
 /* .bg ul li a img{
@@ -427,3 +419,70 @@ ul.custom-bullets li::before {
     border-radius: 8px;
     padding: 0.5%;
 } */
+
+.blog-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.blog-card {
+  background-color: #333;
+  border-radius: 15px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  position: relative;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.blog-content h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.blog-content p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.blog-content a {
+  color: #00f;
+  text-decoration: none;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+}
