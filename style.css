@@ -32,16 +32,6 @@ body {
   text-align: center;
 }
 
-.profile img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-.profile h2,
-.profile p {
-  margin: 10px 0;
-}
 
 nav ul {
   list-style: none;
@@ -160,6 +150,16 @@ header button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile h2,
+.profile p {
+  margin: 10px 0;
 }
 .dash {
   border: 2px solid #ffffff;
