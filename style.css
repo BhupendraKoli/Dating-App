@@ -1,10 +1,11 @@
 body {
   display: flex;
   margin: 0;
-  font-family: Arial, sans-serif;
-  /* background-color: rgba(65, 142, 142, 0.133); */
   background: #a6c0fe;
   background: linear-gradient(to right, #a6c0fe, #f68084);
+  font-family: "Poppins", sans-serif;
+  font-weight:normal;
+  font-style: normal;
 }
 
 .sidebar {
@@ -391,7 +392,6 @@ button {
   padding: 30px;
   background: #ffffff;
   border-radius: 15px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   padding: 20px;
   width: 50%;
   max-width: 400px;
