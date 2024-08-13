@@ -39,6 +39,11 @@ header {
     cursor: pointer;
     
 }
+.logo a{
+    text-decoration: none;
+    color: white;
+    size: 100px ;
+}
 
 /* Hero Section */
 .hero {
