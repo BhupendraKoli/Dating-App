@@ -6,6 +6,7 @@
     <title>Profile Update</title>
     <link rel="stylesheet" href="setting.css">
     <link rel="stylesheet" href="massage.css">
+    <link rel="stylesheet" href="log.css">
     
 </head>
 <body>
@@ -75,10 +76,20 @@
                   alt="icon 1" />Settings</a>
             </li>
             <li>
-              <a class="hover-effect" href="#"><img src="https://cdn-icons-png.flaticon.com/128/992/992680.png"
-                  alt="icon 1" />Logout</a>
+              <a class="hover-effect" href="#" ><img src="https://cdn-icons-png.flaticon.com/128/992/992680.png"
+                  alt="icon 1" /> <button id="logoutBtn" class="bit">Logout</button></a> 
             </li>
           </ul>
+          <div id="logoutModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Are you sure you want to logout?</h2>
+                <button class="confirm-button" id="confirmLogout">Confirm</button>
+            </div>
+    
+        </div>
         </nav>
       </div>
       <div class="main-content">
@@ -147,5 +158,8 @@
     </div>
 
     <script src="setting.js"></script>
+    <script src="log.js"></script>
+  
+    
 </body>
 </html>
