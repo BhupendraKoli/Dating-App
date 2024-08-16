@@ -1,0 +1,77 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.bit {
+  background-color: none;
+  font-size: large;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 300px; /* Could be more or less, depending on screen size */
+  text-align: center;
+  border-radius: 10px;
+}
+
+.modal-content .icon {
+  font-size: 30px;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.modal-content h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal-content .logout-icon {
+  background-color: #fbe8e8;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-content img {
+  width: 50px;
+  height: 50px;
+}
+
+.confirm-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
