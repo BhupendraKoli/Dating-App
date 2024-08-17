@@ -24,6 +24,9 @@ body {
     -moz-transition: background 0.2s ease;
     -ms-transition: background 0.2s ease;
     -o-transition: background 0.2s ease;
+    font-family: "Poppins", sans-serif;
+    font-weight:normal;
+    font-style: normal;
 }
 
 a {

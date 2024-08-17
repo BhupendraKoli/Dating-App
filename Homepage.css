@@ -1,9 +1,13 @@
-/* General Styles */
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #a6c0fe;
+    background: linear-gradient(to right, #a6c0fe, #f68084);
+    font-family: "Poppins", sans-serif;
+    font-weight:normal;
+    font-style: normal;
 }
 
 /* Navigation Bar */
