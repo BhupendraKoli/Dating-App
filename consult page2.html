@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--<link rel="stylesheet" href="conpage2.css" /> -->
+    <style>
+        
+      body {
+        display: flex;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: rgba(255, 127, 127, 0.359);
+      }
+
+      .sidebar {
+        width: 321.75px;
+        background-color: #f4f4f4;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile {
+        text-align: center;
+      }
+
+      .profile img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+
+      .profile h2,
+      .profile p {
+        margin: 10px 0;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 100px 0;
+        font-size: medium;
+        position: relative;
+      }
+
+      nav ul li {
+        margin: 50px 0;
+        text-align: center;
+        text-decoration: solid;
+        margin-bottom: 10px;
+        font-size: large;
+        position: relative;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .main-content {
+        flex: 1;
+        padding: 20px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header {
+        background-color: #f4f4f4;
+        padding: 5px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header input {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      header button {
+        padding: 10px 20px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .event {
+        border: 2px solid #ffffff;
+        background-color: #f4f4f4;
+        box-shadow: 2px 0 2px rgba(0, 0, 0, 0.403);
+        border-radius: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        font-size: large;
+        height: 40px;
+      }
+
+      .event-info {
+        flex-grow: 1;
+      }
+
+      .event-options {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .event-options select {
+        padding: 10px;
+        border-radius: 5px 20px;
+        border: 1px solid #ccc;
+        font-size: large;
+      }
+
+      .profileR-container {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+        margin-top: 2%;
+        float: right;
+        width: 180px;
+        background-color: lightblue;
+        padding: 30px;
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 20px;
+        width: 50%;
+        max-width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 15px 15px 15px;
+      }
+
+      .container {
+        display: flex;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 550px;
+      }
+
+      .content {
+        margin-bottom: 20px;
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 30px;
+      }
+
+      .card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        width: 100%;
+        height: 90%;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .date-grid,
+      .time-grid {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .date,
+      .time {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f1f3ff;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #333;
+      }
+
+      .date.active,
+      .time.active {
+        background-color: #f44336;
+        color: #fff;
+      }
+
+      .booking-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+      .bill p,
+      .date-time p,
+      .total-amount p {
+        display: flex;
+        justify-content: space-between;
+        margin: 5% 5%;
+        color: #333;
+      }
+
+      .total-amount p {
+        font-size: 20px;
+        font-weight: bold;
+        color: #f44336;
+      }
+
+      .pay-btn {
+        padding: 10px;
+        border: none;
+        background-color: #f44336;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .pay-btn:hover {
+        background-color: #d32f2f;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- lets Start the new thing -->
+    <div class="sidebar">
+      <h1 class="main-logo">Hello Moto</h1>
+      <br />
+      <br />
+      <div class="profile">
+        <img
+          src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Profile Picture"
+        />
+        <h2>Sammy Hemmy</h2>
+        <p>Business Man</p>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/1828/1828765.png"
+                alt="icon 1"
+              />Dashboard</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/2558/2558906.png"
+                alt="icon 2"
+              />Events</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/1570/1570888.png"
+                alt="icon 3"
+              />Find Trips</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/11120/11120815.png"
+                alt="icon 1"
+              />Messages</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/14310/14310546.png"
+                alt="icon 1"
+              />Find Partner</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/2420/2420256.png"
+                alt="icon 1"
+              />Virtual Dating</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/4006/4006817.png"
+                alt="icon 1"
+              />Speed Dating</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/1206/1206857.png"
+                alt="icon 1"
+              />Blind Dating</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/2410/2410394.png"
+                alt="icon 1"
+              />Dances</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/1907/1907524.png"
+                alt="icon 1"
+              />Read Blogs & News</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/10465/10465661.png"
+                alt="icon 1"
+              />Get Consult</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/17338/17338302.png"
+                alt="icon 1"
+              />Communities</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/2099/2099058.png"
+                alt="icon 1"
+              />Settings</a
+            >
+          </li>
+          <li>
+            <a class="hover-effect" href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/128/992/992680.png"
+                alt="icon 1"
+              />Logout</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <header class="header">
+        <input type="search" placeholder="Search" /><img
+          src="https://cdn-icons-png.flaticon.com/128/751/751463.png"
+          alt="search icon"
+        />
+        <button>Go Live</button>
+      </header>
+      <br />
+
+      <div class="event">
+        <div class="event-info">
+          <h2>Get Consult > Book</h2>
+        </div>
+        <div class="event-options">
+          <p>Sort By</p>
+          <select>
+            <option value="all-events">Latest</option>
+            <option value="upcoming-events">Trending</option>
+            <option value="past-events">Populer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="join-events">
+        <div class="profilesR">
+          <div class="profileR-container">
+            <div class="left-section">
+              <div class="booking-details">
+                <h2>Booking Details</h2>
+                <div class="bill">
+                  <p>Initial Price <span>$192</span></p>
+                  <p>SGST <span>$0.21</span></p>
+                  <p>GST <span>$0.21</span></p>
+                  <p>Platform fee <span>$0.21</span></p>
+                  <p>Other Cost <span>$0.21</span></p>
+                </div>
+                <div class="date-time">
+                  <p>Date & Time</p>
+                  <p>2 January 2023, 2PM</p>
+                </div>
+                <div class="total-amount">
+                  <p>Total Amount <span>$1500</span></p>
+                </div>
+                <button class="pay-btn">Proceed to Pay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="content">
+        <br /><br />
+        <div class="card-container">
+          <div class="card">
+            <div class="select-date">
+              <h2>Select Date - January 2023</h2>
+              <div class="date-grid">
+                <div class="date">
+                  MON <br />
+                  1
+                </div>
+                <div class="date active">
+                  MON <br />
+                  2
+                </div>
+                <div class="date">
+                  MON <br />
+                  3
+                </div>
+                <div class="date">
+                  MON <br />
+                  4
+                </div>
+                <div class="date">
+                  MON <br />
+                  5
+                </div>
+                <div class="date">
+                  MON <br />
+                  6
+                </div>
+                <div class="date">
+                  MON <br />
+                  7
+                </div>
+                <div class="date">
+                  MON <br />
+                  9
+                </div>
+                <div class="date">
+                  MON <br />
+                  5
+                </div>
+              </div>
+            </div>
+
+            <div class="select-time">
+              <h2>Select Time</h2>
+              <div class="time-grid">
+                <div class="time active">
+                  PM <br />
+                  12
+                </div>
+                <div class="time">
+                  PM <br />
+                  1
+                </div>
+                <div class="time">
+                  PM <br />
+                  2
+                </div>
+                <div class="time">
+                  PM <br />
+                  3
+                </div>
+                <div class="time">
+                  PM <br />
+                  4
+                </div>
+                <div class="time">
+                  PM <br />
+                  5
+                </div>
+                <div class="time">
+                  PM <br />
+                  6
+                </div>
+                <div class="time">
+                  PM <br />
+                  7
+                </div>
+                <div class="time">
+                  PM <br />
+                  2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
