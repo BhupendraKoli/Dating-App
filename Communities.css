@@ -1,0 +1,156 @@
+.pfc {
+    position: absolute; 
+    width: 68%;
+    top: 180px; 
+    background-color: lightblue;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Ensure it's on top */
+}
+.p-container {
+    
+  top:0px;
+
+}
+
+.p-container button{
+    padding: 5px 15px;
+    margin-right: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 15px 15px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.p-card {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    background-color: #fff;
+}
+.p-card a{
+    text-decoration: none;
+    color: black;
+}
+
+.p-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.p-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.p-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+.p-name b {
+    font-size: 20px;
+    font-weight: bold;
+   margin-top: 100%;
+}
+.p-name i {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    color: grey;
+}
+.min {
+    float: right;
+    right: 0px;
+    margin-right: 0%;
+    font-size: 10px;
+    color: gray;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #e74c3c;
+    transition: color 0.3s;
+}
+
+.like-btn:hover {
+    color: #c0392b;
+}
+
+.like-icon {
+    font-size: 20px;
+}
+
+   
+
+.boxex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box {
+    width: 17%;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.box img {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+.box .content {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+}
+
+.box .content img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 2px solid white; 
+}
+.box p{
+    margin-top: 75px;
+
+}
+.box a{
+    color: grey;
+}

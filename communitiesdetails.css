@@ -1,0 +1,245 @@
+body {
+  display: flex;
+  margin: 0;
+  background: #a6c0fe;
+  background: linear-gradient(to right, #a6c0fe, #f68084);
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.profile-header {
+  background-color: #e89090;
+  height: 125px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic-container {
+  position: absolute;
+  bottom: -50px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.piks {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.fav {
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 10px;
+}
+
+.icone {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+  gap: 10px; /* Optional: Add some space between the images */
+}
+
+.icone img {
+  display: flex;
+  width: 30px;
+
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.pname {
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.media-section {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  gap: 10px;
+}
+
+.media-section h2 {
+  text-align: left;
+}
+
+.media-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.media-gallery img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.empty-media {
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.view-all {
+  display: inline-block;
+  margin-top: 10px;
+  color: #d23232;
+  text-decoration: none;
+  font-weight: bold;
+}
+.msgcontinr {
+  background-color: #ffffff;
+  height: auto;
+  width: 96%;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+.dash h2 a {
+  text-decoration: none;
+  color: black;
+}
+.profile-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  padding: 30px;
+
+  padding: 20px;
+  width: 50%;
+  max-width: 300px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 10px;
+  width: 250px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 10px;
+  width: 250px;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.bit {
+  background-color: none;
+  font-size: large;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 300px; /* Could be more or less, depending on screen size */
+  text-align: center;
+  border-radius: 10px;
+}
+
+.modal-content .icon {
+  font-size: 30px;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.modal-content h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal-content .logout-icon {
+  background-color: #fbe8e8;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-content img {
+  width: 50px;
+  height: 50px;
+}
+
+.confirm-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
