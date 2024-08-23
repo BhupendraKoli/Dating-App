@@ -71,11 +71,12 @@
     color: grey;
 }
 .min {
-    float: right;
+     float: right;
     right: 0px;
     margin-right: 0%;
     font-size: 10px;
-    color: gray;
+    color: gray; 
+  
 }
 
 .like-btn {
