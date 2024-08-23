@@ -23,7 +23,7 @@ span.onclick = function() {
 // When the user clicks on the confirm button, log out
 confirmBtn.onclick = function() {
     alert("Logging out...");
-     window.location.href = 'HomePage.html';
+     window.location.href = 'index.html';
     modal.style.display = "none";
 }
 

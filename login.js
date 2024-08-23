@@ -64,7 +64,7 @@ function koli() {
     if (email && password) {
       alert('LOGIN DONE');
       // Corrected file name spelling if necessary
-      window.location.assign("index.html"); // Replace with the correct page name
+      window.location.assign("dashbord.html"); // Replace with the correct page name
     } else {
       alert("Please enter your username and password");
     }

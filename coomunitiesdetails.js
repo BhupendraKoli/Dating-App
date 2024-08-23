@@ -25,7 +25,7 @@ span.onclick = function() {
 // When the user clicks on the confirm button, log out
 confirmBtn.onclick = function() {
     alert("Logging out...");
-     window.location.href = 'index.html';
+     window.location.href = 'dashbord.html';
     modal.style.display = "none";
 }
 
